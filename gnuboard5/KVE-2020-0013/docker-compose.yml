@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+    vulnhub_kve_2020_0013:
+        container_name: vulnhub_kve_2020_0013
+        build: ./
+        ports:
+            - "8081:80"

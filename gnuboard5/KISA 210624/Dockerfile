@@ -8,7 +8,7 @@ RUN apt-get install apache2 php mysql-server php-mysql git -y
 
 RUN git clone https://github.com/gnuboard/gnuboard5
 WORKDIR /gnuboard5
-RUN git checkout 1aedb8f805908b9c30937ca127b090e65b7e6271
+RUN git checkout cf3570586a1b5caf2d7425f773d0dcd1598f69f1
 
 RUN sed -i "s#/var/www/html#/gnuboard5#g" /etc/apache2/sites-enabled/000-default.conf
 RUN sed -i "s#/var/www/#/gnuboard5#g" /etc/apache2/apache2.conf

@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+    vulnhub_kisa_210604:
+        container_name: vulnhub_kisa_210604
+        build: ./
+        ports:
+            - "8081:80"
